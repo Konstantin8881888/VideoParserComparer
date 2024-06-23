@@ -4,13 +4,62 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab34d1ce-ccd2-4c68-ba2e-3af91358d0d5" name="Changes" comment="Change UI">
+    <list default="true" id="ab34d1ce-ccd2-4c68-ba2e-3af91358d0d5" name="Changes" comment="Optimized UI">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/About.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Copy to folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Create Folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Cut.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Delete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Down-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Export.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Find next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Find.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Help 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Image 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Image properties.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Import.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Language.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Left-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Move to folder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/New.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Ok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Open Image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Options.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Page setup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Paste.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Print preview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Redo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Replace.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Right-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Run.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Save as.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Send by email.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Show images.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Stop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Support.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Tip of the day.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Undo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Unlock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Up-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Visit home page.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/Wizard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/videoparsercompiler/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/videoparsercomparer/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/videoparsercompiler/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/videoparsercomparer/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/videoparsercompiler/i18n/strings_en.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/videoparsercomparer/i18n/strings_en.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/videoparsercompiler/i18n/strings_ru.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/videoparsercomparer/i18n/strings_ru.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/videoparsercomparer/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/videoparsercomparer/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +132,7 @@
       <workItem from="1719131894094" duration="5379000" />
       <workItem from="1719137806348" duration="458000" />
       <workItem from="1719138276874" duration="738000" />
-      <workItem from="1719139123194" duration="685000" />
+      <workItem from="1719139123194" duration="4302000" />
     </task>
     <task id="LOCAL-00001" summary="Change UI">
       <created>1719138684799</created>
@@ -111,6 +160,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Change UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change UI" />
+    <MESSAGE value="Optimized UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized UI" />
   </component>
 </project>

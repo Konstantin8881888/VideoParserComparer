@@ -6,6 +6,8 @@ import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
+import javafx.animation.FadeTransition;
+import javafx.util.Duration;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -65,6 +67,7 @@ public class MainController {
         locale = new Locale("en");
         bundle = ResourceBundle.getBundle("com.videoparsercomparer.i18n.strings", locale, new MainApp.UTF8Control());
         updateTexts();
+        playFadeAnimation();
     }
 
     @FXML
@@ -72,7 +75,16 @@ public class MainController {
         locale = new Locale("ru");
         bundle = ResourceBundle.getBundle("com.videoparsercomparer.i18n.strings", locale, new MainApp.UTF8Control());
         updateTexts();
+        playFadeAnimation();
     }
+
+    private void playFadeAnimation() {
+        FadeTransition fadeTransition = new FadeTransition(Duration.seconds(0.5), menuBar);
+        fadeTransition.setFromValue(0);
+        fadeTransition.setToValue(1);
+        fadeTransition.play();
+    }
+
 
     private void updateTexts() {
         menuFile.setText(bundle.getString("menu.file"));

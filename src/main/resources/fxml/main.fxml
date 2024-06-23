@@ -5,15 +5,34 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.BorderPane?>
 
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
 <BorderPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.videoparsercomparer.MainController">
     <top>
         <MenuBar fx:id="menuBar">
             <Menu fx:id="menuFile" text="%menu.file">
-                <MenuItem fx:id="menuItemAbout" text="%menu.about" onAction="#showAbout"/>
-                <MenuItem fx:id="menuItemExit" text="%menu.exit" onAction="#exitApp"/>
+                <MenuItem fx:id="menuItemAbout" text="%menu.about" onAction="#showAbout">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@/icons/About.png"/>
+                        </ImageView>
+                    </graphic>
+                </MenuItem>
+                <MenuItem fx:id="menuItemExit" text="%menu.exit" onAction="#exitApp">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@/icons/Exit.png"/>
+                        </ImageView>
+                    </graphic>
+                </MenuItem>
             </Menu>
             <Menu fx:id="menuSettings" text="%menu.settings">
                 <Menu fx:id="menuChangeLanguage" text="%menu.changeLanguage">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@/icons/Language.png"/>
+                        </ImageView>
+                    </graphic>
                     <MenuItem fx:id="menuItemEnglish" text="English" onAction="#changeLanguageToEnglish"/>
                     <MenuItem fx:id="menuItemRussian" text="Русский" onAction="#changeLanguageToRussian"/>
                 </Menu>
