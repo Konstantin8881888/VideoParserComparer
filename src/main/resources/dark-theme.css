@@ -1,0 +1,29 @@
+/* Стили для MenuBar */
+.menu-bar {
+    -fx-background-color: #333;
+}
+
+/* Стили для Menu */
+.menu {
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+}
+
+.menu:hover {
+    -fx-background-color: #444;
+}
+
+/* Стили для MenuItem */
+.menu-item {
+    -fx-text-fill: white;
+    -fx-background-color: #333;
+}
+
+.menu-item:hover {
+    -fx-background-color: #444;
+}
+
+/* Стили для текста в меню */
+.menu .label, .menu-item .label {
+    -fx-text-fill: white;
+}

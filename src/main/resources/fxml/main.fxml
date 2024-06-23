@@ -36,6 +36,13 @@
                     <MenuItem fx:id="menuItemEnglish" text="English" onAction="#changeLanguageToEnglish"/>
                     <MenuItem fx:id="menuItemRussian" text="Русский" onAction="#changeLanguageToRussian"/>
                 </Menu>
+                <MenuItem fx:id="menuItemToggleTheme" text="%menu.toggleTheme" onAction="#toggleTheme">
+                    <graphic>
+                        <ImageView>
+                            <Image url="@/icons/Wizard.png"/>
+                        </ImageView>
+                    </graphic>
+                </MenuItem>
             </Menu>
         </MenuBar>
     </top>
