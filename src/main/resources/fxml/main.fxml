@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
 
-<VBox xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
-    <children>
-        <Button text="Click Me"/>
-    </children>
-    <padding>
-        <Insets top="20" right="20" bottom="20" left="20"/>
-    </padding>
-</VBox>
+<BorderPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.videoparsercompiler.MainController">
+    <top>
+        <MenuBar fx:id="menuBar">
+            <Menu fx:id="menuFile" text="%menu.file">
+                <MenuItem fx:id="menuItemAbout" text="%menu.about" onAction="#showAbout"/>
+                <MenuItem fx:id="menuItemExit" text="%menu.exit" onAction="#exitApp"/>
+            </Menu>
+            <Menu fx:id="menuSettings" text="%menu.settings">
+                <Menu fx:id="menuChangeLanguage" text="%menu.changeLanguage">
+                    <MenuItem fx:id="menuItemEnglish" text="English" onAction="#changeLanguageToEnglish"/>
+                    <MenuItem fx:id="menuItemRussian" text="Русский" onAction="#changeLanguageToRussian"/>
+                </Menu>
+            </Menu>
+        </MenuBar>
+    </top>
+</BorderPane>
