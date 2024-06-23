@@ -1,21 +1,24 @@
 package com.videoparsercomparer;
 
+import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.stage.Stage;
-import javafx.animation.FadeTransition;
 import javafx.util.Duration;
 
 import java.util.Locale;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class MainController {
 
     @FXML
-    public MenuBar menuBar;
+    private MenuBar menuBar;
+
     @FXML
     private Menu menuFile;
 
@@ -37,8 +40,13 @@ public class MainController {
     @FXML
     private MenuItem menuItemRussian;
 
+    @FXML
+    private MenuItem menuItemToggleTheme;
+
     private ResourceBundle bundle;
     private Locale locale;
+    private boolean isDarkTheme = false;
+    private Scene scene;
 
     @FXML
     private void initialize() {
@@ -78,13 +86,26 @@ public class MainController {
         playFadeAnimation();
     }
 
+    @FXML
+    private void toggleTheme() {
+        if (scene == null) {
+            scene = MainApp.getPrimaryStage().getScene();
+        }
+        String darkTheme = Objects.requireNonNull(getClass().getResource("/dark-theme.css")).toExternalForm();
+        if (isDarkTheme) {
+            scene.getStylesheets().remove(darkTheme);
+        } else {
+            scene.getStylesheets().add(darkTheme);
+        }
+        isDarkTheme = !isDarkTheme;
+    }
+
     private void playFadeAnimation() {
         FadeTransition fadeTransition = new FadeTransition(Duration.seconds(0.5), menuBar);
         fadeTransition.setFromValue(0);
         fadeTransition.setToValue(1);
         fadeTransition.play();
     }
-
 
     private void updateTexts() {
         menuFile.setText(bundle.getString("menu.file"));
@@ -94,5 +115,6 @@ public class MainController {
         menuChangeLanguage.setText(bundle.getString("menu.changeLanguage"));
         menuItemEnglish.setText("English");
         menuItemRussian.setText("Русский");
+        menuItemToggleTheme.setText(bundle.getString("menu.toggleTheme"));
     }
 }
