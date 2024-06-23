@@ -3,10 +3,7 @@ package com.videoparsercomparer;
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Menu;
-import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -43,6 +40,9 @@ public class MainController {
     @FXML
     private MenuItem menuItemToggleTheme;
 
+    @FXML
+    private Label statusLabel;
+
     private ResourceBundle bundle;
     private Locale locale;
     private boolean isDarkTheme = false;
@@ -53,6 +53,7 @@ public class MainController {
         locale = new Locale("en");
         bundle = ResourceBundle.getBundle("com.videoparsercomparer.i18n.strings", locale, new MainApp.UTF8Control());
         updateTexts();
+        updateStatusLabel("Ready");
     }
 
     @FXML
@@ -62,12 +63,14 @@ public class MainController {
         alert.setHeaderText(null);
         alert.setContentText(bundle.getString("about.content"));
         alert.showAndWait();
+        updateStatusLabel("Displayed About information");
     }
 
     @FXML
     private void exitApp() {
         Stage stage = (Stage) MainApp.getPrimaryStage().getScene().getWindow();
         stage.close();
+        updateStatusLabel("Application closed");
     }
 
     @FXML
@@ -76,6 +79,7 @@ public class MainController {
         bundle = ResourceBundle.getBundle("com.videoparsercomparer.i18n.strings", locale, new MainApp.UTF8Control());
         updateTexts();
         playFadeAnimation();
+        updateStatusLabel("Language changed to English");
     }
 
     @FXML
@@ -84,6 +88,7 @@ public class MainController {
         bundle = ResourceBundle.getBundle("com.videoparsercomparer.i18n.strings", locale, new MainApp.UTF8Control());
         updateTexts();
         playFadeAnimation();
+        updateStatusLabel("Язык изменен на русский");
     }
 
     @FXML
@@ -94,8 +99,10 @@ public class MainController {
         String darkTheme = Objects.requireNonNull(getClass().getResource("/dark-theme.css")).toExternalForm();
         if (isDarkTheme) {
             scene.getStylesheets().remove(darkTheme);
+            updateStatusLabel("Switched to Light Theme");
         } else {
             scene.getStylesheets().add(darkTheme);
+            updateStatusLabel("Switched to Dark Theme");
         }
         isDarkTheme = !isDarkTheme;
     }
@@ -116,5 +123,9 @@ public class MainController {
         menuItemEnglish.setText("English");
         menuItemRussian.setText("Русский");
         menuItemToggleTheme.setText(bundle.getString("menu.toggleTheme"));
+    }
+
+    private void updateStatusLabel(String message) {
+        statusLabel.setText(message);
     }
 }
