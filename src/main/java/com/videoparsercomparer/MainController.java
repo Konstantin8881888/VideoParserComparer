@@ -1,4 +1,4 @@
-package com.videoparsercompiler;
+package com.videoparsercomparer;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
@@ -41,7 +41,7 @@ public class MainController {
     @FXML
     private void initialize() {
         locale = new Locale("en");
-        bundle = ResourceBundle.getBundle("com.videoparsercompiler.i18n.strings", locale, new MainApp.UTF8Control());
+        bundle = ResourceBundle.getBundle("com.videoparsercomparer.i18n.strings", locale, new MainApp.UTF8Control());
         updateTexts();
     }
 
@@ -63,14 +63,14 @@ public class MainController {
     @FXML
     private void changeLanguageToEnglish() {
         locale = new Locale("en");
-        bundle = ResourceBundle.getBundle("com.videoparsercompiler.i18n.strings", locale, new MainApp.UTF8Control());
+        bundle = ResourceBundle.getBundle("com.videoparsercomparer.i18n.strings", locale, new MainApp.UTF8Control());
         updateTexts();
     }
 
     @FXML
     private void changeLanguageToRussian() {
         locale = new Locale("ru");
-        bundle = ResourceBundle.getBundle("com.videoparsercompiler.i18n.strings", locale, new MainApp.UTF8Control());
+        bundle = ResourceBundle.getBundle("com.videoparsercomparer.i18n.strings", locale, new MainApp.UTF8Control());
         updateTexts();
     }
 

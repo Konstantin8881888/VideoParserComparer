@@ -1,4 +1,4 @@
-package com.videoparsercompiler;
+package com.videoparsercomparer;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -22,7 +22,7 @@ public class MainApp extends Application {
         MainApp.primaryStage = primaryStage;
 
         Locale locale = new Locale("en");
-        ResourceBundle bundle = ResourceBundle.getBundle("com.videoparsercompiler.i18n.strings", locale, new UTF8Control());
+        ResourceBundle bundle = ResourceBundle.getBundle("com.videoparsercomparer.i18n.strings", locale, new UTF8Control());
 
         FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/fxml/main.fxml"), bundle);
         Scene scene = new Scene(loader.load(), 800, 600);
